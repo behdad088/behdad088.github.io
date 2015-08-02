@@ -1,0 +1,156 @@
+.section-work{
+    overflow-x: hidden;
+}
+.work-belt{
+    width: 200%;
+    position: relative;
+    transition-duration: 1s;
+    -webkit-transition-duration: 1s ;
+    -moz-transition-duration: 1s ;
+    -ms-transition-duration: 1s ;
+    -o-transition-duration: 1s ;
+}
+.thumb-wrap, .work-wrap{
+     width: 50%;
+    float: left;
+}
+
+.alt-section{
+    background: #e5eaee;
+}
+.thumb-container{
+    max-width: 960px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+.thumb-unit{
+    display: block;
+    width: 25%;
+    float: left;
+    position: relative;
+    padding-top: 16%;
+    overflow: hidden;
+    cursor: pointer;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+
+   /* for making prespective , for popup
+   perspective: 300px;
+    -webkit-perspective: 300px;*/
+}
+@media screen and (max-width:760px){
+    .thumb-container{
+        margin: 0 1%;
+    }
+    .thumb-unit{
+        width: 50%;
+        padding-top: 26%;
+    }
+}
+
+.thumb-overlay{
+    position: absolute;/* must be searched*/
+    height: 100%;
+    top: 0;/*  top: 100%; down to up*/ /*top: -50%; popup*/
+    left: 0;
+    right: 0;
+    background: #c99065 ;
+    display: flex;
+    align-items: center !important;
+    justify-content: center;
+
+    /* background transparent*/
+    opacity: 0.8;
+    transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    /* -- makeing rotate
+    transition-duration : 0.5s;
+    -webkit-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    transform-origin: center bottom;
+    */
+}
+.thumb-overlay strong{
+    display: block;
+    padding: 0px 20px;
+    color: #ffffff;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 1.2;
+
+}
+.thumb-unit:hover{
+  /*
+  z-index: 2;*/
+}
+.thumb-unit:hover .thumb-overlay{
+
+    -webkit-animation: thumboverlay-anim 750ms linear both !important;
+    animation: thumboverlay-anim 750ms linear both !important;
+  /*  top: 0;
+    transform: rotateX(0deg);
+    */
+}
+
+
+@media screen and (max-width:406px){
+    .thumb-overlay strong{
+        display: block;
+        padding: 0px 20px;
+        color: #ffffff;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 95%;
+        line-height: 1.2;
+    }
+}
+
+.work-container{
+    max-width: 600px;
+    margin: 0px auto;
+    position: relative;
+}
+.project-load{
+    width: 600px;
+    height: auto;
+}
+
+.work-container img{
+    max-width: 100%;
+
+}
+h4{
+    color: #c99065 ;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 1.2;
+    margin: 0 0 20px;
+}
+.work-return{
+    background-image: url("../img/return.svg");
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    opacity: 0.6;
+    position: absolute;
+    top: -4px;
+    right:0 ;
+    bottom:0 ;
+    left: -60px;
+}
+.work-return:hover{
+    opacity: 0.7;
+}
+@media  (max-width:740px) {
+    .work-container{
+
+    }
+    .work-return{
+       left:0px;
+    }
+    h4{
+        margin-left: 60px;
+    }
+}

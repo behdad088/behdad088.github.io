@@ -1,0 +1,76 @@
+header{
+    background-image: url(../img/74H.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 50px;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin: 10px 0 0 30px;
+    mix-blend-mode : overlay;
+    background-image: url(../img/logo.svg);
+    position: absolute;
+
+}
+.logo path{
+}
+nav{
+    float: right;
+    padding: 30px 30px 0 0;
+}
+nav a{
+    display: inline-block;
+    margin-left: 20px;
+    color: rgba(0,0,0,0.7);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+nav a:hover {
+    color: rgba(0,0,0,1);
+}
+h1{
+    text-align: center;
+    font-size: 72px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing:0.05em ;
+    margin-bottom: 20px;
+    clear: both;
+    padding-top: 100px;
+}
+h1 span{
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    border: white solid 10px;
+}
+.kicker{
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing:0.05em ;
+    color: white;
+}
+
+@media (max-width: 640px){
+.logo{
+    margin: 10px 0 0 50%;
+
+}
+
+nav{
+    float: none;
+    text-align: center;
+    padding-top: 90px;
+
+}
+h1{
+    padding-top: 0;
+}
+
+}

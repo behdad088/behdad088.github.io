@@ -1,0 +1,37 @@
+footer{
+
+    background-image: url("../img/74H.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.lockup{
+    padding:50px 30px;
+}
+.logof{
+    height: 50px;
+    width: 50px;
+    float: left;
+    background-image: url("../img/logo.svg");
+    mix-blend-mode : overlay;
+    margin-right: 30px;
+}
+.content-wrap{
+    float: left;
+}
+.clear{
+    clear: both;
+}
+.copyright{
+    margin: 0 0 0 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgba(0,0,0,0.4);
+}
+
+
+.buttoma{
+
+    color: rgba(0,0,0,0.5);
+    display: inline-block;
+    margin-right: 30px;
+}

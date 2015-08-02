@@ -1,0 +1,161 @@
+.section-clients{
+ position: relative;
+}
+
+.clients-belt{
+    width: 100%;
+    position: relative;
+}
+.client-unit{
+    max-width: 750px;
+    margin: 50px auto;
+    position: relative;
+    top:0;
+    display: none;
+    transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+}
+.client-unit.active-client{
+    display: flex;
+    webkit-animation: thumboverlay-anim 750ms linear both !important;
+    animation: thumboverlay-anim 750ms linear both !important;
+}
+.client-face{
+    min-width: 300px;
+    text-align: center;
+}
+.client-face img{
+    max-width: 100px;
+    border-radius: 50%;
+}
+.client-name{
+    display: block;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.client-title{
+    font-style: normal;
+    font-size: 12px;
+    color: #999;
+}
+.client-content{
+    position: relative;
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: 400;
+    margin-top: -20px;
+}
+.client-content p{
+    margin-top: 0;
+}
+
+.clients-logos{
+    position: relative;
+    max-width: 750px;
+    margin: 50px auto 100px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.client-logo{
+    cursor: pointer;
+    margin: 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 4px solid transparent;
+    opacity: 0.5;
+}
+.client-logo.active-client{
+    border-bottom: 4px solid #c99065;
+    opacity: 1;
+}
+
+.client-quote-mark{
+    position: absolute;
+    top: 3px;
+    left: -8px;
+    bottom: 0;
+    right: 0;
+    height: 60px;
+    width: 60px;
+    z-index: -1;
+    opacity: 0.4;
+}
+.client-controls{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+.client-control-next{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+.client-control-prev{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* client mobile nav */
+.client-mobile-nav{
+    text-align: center;
+    display: none;
+
+}
+.client-mobile-nav span{
+    cursor: pointer;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    border: solid 2px #aaaaaa;
+    margin: 0 10px;
+}
+.client-mobile-nav span.active-client{
+    border-color: #c99065;
+}
+
+
+@media (max-width:850px){
+    .client-controls{
+        display: none;
+    }
+    .client-unit.active-client{
+        display: block;
+        position: relative;
+        margin-left: 0px;
+        left: auto;
+    }
+    .client-face{
+        margin-bottom: 20px;
+        min-width: 200px;
+
+    }
+    .client-content{
+        padding: 0 30px;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .client-quote-mark{
+        left: 15px;
+    }
+    .clients-logos{
+        display: none;
+    }
+    .client-mobile-nav{
+        display: block;
+    }
+}

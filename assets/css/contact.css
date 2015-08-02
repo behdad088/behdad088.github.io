@@ -1,0 +1,48 @@
+.section-contact{
+    text-align: center;
+}
+.social-links{
+    max-width: 700px;
+    margin:  0 auto 50px;
+    display: flex;
+    justify-content : space-around;
+    flex-wrap: wrap;
+}
+.social-links a{
+    display: block;
+    height: 50px;
+    width: 50px;
+    background: #c99065;
+    line-height: 50px;
+    color: #ffffff;
+    transition-duration: 0.2s;
+    font-size: 17pt;
+    margin: 20px;
+}
+.social-links a:hover{
+    transform : scale(1.2)
+}
+
+.bar{
+    width: 250px;
+    height: 0px;
+    border-top: 4px solid  #c99065;
+    margin: 0px auto 70px;
+}
+.biglink{
+    font-family: 'Open Sans';
+    display: inline-block;
+    font-size: 72px;
+    font-weight: 300;
+    margin-bottom: 80px;
+    line-height: 1;
+
+}
+@media (max-width:600px) {
+
+    .biglink{
+        font-size: 10vw;
+        margin: 0 1% 80px 1%;
+
+    }
+}
